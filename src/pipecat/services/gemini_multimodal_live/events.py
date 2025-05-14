@@ -168,6 +168,8 @@ class ServerContent(BaseModel):
     interrupted: Optional[bool] = None
     turnComplete: Optional[bool] = None
     outputTranscription: Optional[BidiGenerateContentTranscription] = None
+    groundingMetadata: Optional[GroundingMetadata] = None # Add the new field
+
 
 
 class FunctionCall(BaseModel):
